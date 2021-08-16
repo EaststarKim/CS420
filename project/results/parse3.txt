@@ -1,0 +1,384 @@
+Opening files. . .
+Parsing. . .
+Total 5 functions...
+{
+    params: [
+        {
+            param type: int,
+            identity: param,
+            symbol: num,
+        }
+    ]
+    symbol: sumAll,
+    return type: int,
+    stmts: [
+        {
+            content: {
+                condition: ({'index': None, 'line info': (3, 3), 'identity': 'id', 'symbol': 'num'}, '>', {'content': '1', 'line info': (3, 3), 'identity': 'number'}),
+                stmts: [
+                    {
+                        content: {
+                            line info: (5, 0),
+                            return value: [
+                                +,
+                                {
+                                    index: None,
+                                    line info: (5, 5),
+                                    identity: id,
+                                    symbol: num,
+                                }
+                                {
+                                    args: [
+                                        [
+                                            -,
+                                            {
+                                                index: None,
+                                                line info: (5, 5),
+                                                identity: id,
+                                                symbol: num,
+                                            }
+                                            {
+                                                content: 1,
+                                                line info: (5, 5),
+                                                identity: number,
+                                            }
+                                        ]
+                                    ]
+                                    function symbol: sumAll,
+                                    line info: (5, 5),
+                                    identity: function call,
+                                }
+                            ]
+                            identity: return,
+                        }
+                        identity: stmt,
+                    }
+                ]
+                line info: (3, 6),
+                identity: if,
+            }
+            identity: stmt,
+        }
+        {
+            content: {
+                line info: (8, 0),
+                return value: {
+                    index: None,
+                    line info: (8, 8),
+                    identity: id,
+                    symbol: num,
+                }
+                identity: return,
+            }
+            identity: stmt,
+        }
+    ]
+    line info: (0, 9),
+    identity: function,
+}
+{
+    params: [
+        {
+            param type: int,
+            identity: param,
+            symbol: a,
+        }
+        {
+            param type: int,
+            identity: param,
+            symbol: b,
+        }
+    ]
+    symbol: sum,
+    return type: int,
+    stmts: [
+        {
+            content: {
+                line info: (12, 0),
+                return value: [
+                    +,
+                    {
+                        index: None,
+                        line info: (12, 12),
+                        identity: id,
+                        symbol: a,
+                    }
+                    {
+                        index: None,
+                        line info: (12, 12),
+                        identity: id,
+                        symbol: b,
+                    }
+                ]
+                identity: return,
+            }
+            identity: stmt,
+        }
+    ]
+    line info: (0, 13),
+    identity: function,
+}
+{
+    params: [
+        {
+            param type: int,
+            identity: param,
+            symbol: a,
+        }
+        {
+            param type: int,
+            identity: param,
+            symbol: b,
+        }
+    ]
+    symbol: sub,
+    return type: int,
+    stmts: [
+        {
+            content: {
+                line info: (16, 0),
+                return value: [
+                    -,
+                    {
+                        index: None,
+                        line info: (16, 16),
+                        identity: id,
+                        symbol: a,
+                    }
+                    {
+                        index: None,
+                        line info: (16, 16),
+                        identity: id,
+                        symbol: b,
+                    }
+                ]
+                identity: return,
+            }
+            identity: stmt,
+        }
+    ]
+    line info: (0, 17),
+    identity: function,
+}
+{
+    params: [
+        {
+            param type: int,
+            identity: param,
+            symbol: a,
+        }
+        {
+            param type: int,
+            identity: param,
+            symbol: b,
+        }
+    ]
+    symbol: mult,
+    return type: int,
+    stmts: [
+        {
+            content: {
+                line info: (20, 0),
+                return value: [
+                    *,
+                    {
+                        index: None,
+                        line info: (20, 20),
+                        identity: id,
+                        symbol: a,
+                    }
+                    {
+                        index: None,
+                        line info: (20, 20),
+                        identity: id,
+                        symbol: b,
+                    }
+                ]
+                identity: return,
+            }
+            identity: stmt,
+        }
+    ]
+    line info: (0, 21),
+    identity: function,
+}
+{
+    params: [
+        {
+            param type: void,
+            identity: param,
+        }
+    ]
+    symbol: main,
+    return type: int,
+    stmts: [
+        {
+            content: {
+                vars: [
+                    {
+                        index: None,
+                        line info: (25, 25),
+                        identity: id,
+                        symbol: a,
+                    }
+                    {
+                        index: None,
+                        line info: (25, 25),
+                        identity: id,
+                        symbol: b,
+                    }
+                    {
+                        index: None,
+                        line info: (25, 25),
+                        identity: id,
+                        symbol: c,
+                    }
+                    {
+                        index: None,
+                        line info: (25, 25),
+                        identity: id,
+                        symbol: d,
+                    }
+                ]
+                line info: (0, 0),
+                identity: declare var,
+                var type: int,
+            }
+            identity: stmt,
+        }
+        {
+            content: {
+                line info: (0, 0),
+                expr: arithexp,
+                identity: assign,
+                var symbol: {
+                    index: None,
+                    line info: (26, 26),
+                    identity: id,
+                    symbol: a,
+                }
+            }
+            identity: stmt,
+        }
+        {
+            content: {
+                line info: (0, 0),
+                expr: arithexp,
+                identity: assign,
+                var symbol: {
+                    index: None,
+                    line info: (27, 27),
+                    identity: id,
+                    symbol: b,
+                }
+            }
+            identity: stmt,
+        }
+        {
+            content: {
+                incre: {
+                    isPreFix: False,
+                    line info: (0, 28),
+                    identity: incre,
+                    symbol: {
+                        index: None,
+                        line info: (28, 28),
+                        identity: id,
+                        symbol: c,
+                    }
+                }
+                assign: ({'index': None, 'line info': (28, 28), 'identity': 'id', 'symbol': 'c'}, {'content': '0', 'line info': (28, 28), 'identity': 'number'}),
+                stmts: [
+                    {
+                        content: {
+                            line info: (0, 0),
+                            expr: arithexp,
+                            identity: assign,
+                            var symbol: {
+                                index: None,
+                                line info: (30, 30),
+                                identity: id,
+                                symbol: d,
+                            }
+                        }
+                        identity: stmt,
+                    }
+                ]
+                line info: (28, 31),
+                identity: forloop,
+                condition: ({'index': None, 'line info': (28, 28), 'identity': 'id', 'symbol': 'c'}, '<', {'content': '5', 'line info': (28, 28), 'identity': 'number'}),
+            }
+            identity: stmt,
+        }
+        {
+            content: {
+                line info: (0, 0),
+                expr: arithexp,
+                identity: assign,
+                var symbol: {
+                    index: None,
+                    line info: (32, 32),
+                    identity: id,
+                    symbol: c,
+                }
+            }
+            identity: stmt,
+        }
+        {
+            content: {
+                line info: (0, 0),
+                expr: arithexp,
+                identity: assign,
+                var symbol: {
+                    index: None,
+                    line info: (33, 33),
+                    identity: id,
+                    symbol: d,
+                }
+            }
+            identity: stmt,
+        }
+        {
+            content: {
+                args: [
+                    {
+                        content: c = %d, d = %d\n,
+                        line info: (35, 35),
+                        identity: string,
+                    }
+                    {
+                        index: None,
+                        line info: (35, 35),
+                        identity: id,
+                        symbol: c,
+                    }
+                    {
+                        index: None,
+                        line info: (35, 35),
+                        identity: id,
+                        symbol: d,
+                    }
+                ]
+                function symbol: printf,
+                line info: (35, 35),
+                identity: function call,
+            }
+            identity: stmt,
+        }
+        {
+            content: {
+                line info: (37, 0),
+                return value: {
+                    content: 0,
+                    line info: (37, 37),
+                    identity: number,
+                }
+                identity: return,
+            }
+            identity: stmt,
+        }
+    ]
+    line info: (0, 38),
+    identity: function,
+}
+Done.

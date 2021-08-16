@@ -1,0 +1,144 @@
+Opening files. . .
+Parsing. . .
+Total 2 functions...
+{
+    return type: int,
+    line info: (0, 9),
+    params: [
+        {
+            param type: int,
+            symbol: num,
+            identity: param,
+        }
+    ]
+    symbol: sum,
+    stmts: [
+        {
+            content: {
+                condition: ({'line info': (3, 3), 'symbol': 'num', 'index': None, 'identity': 'id'}, '>', {'line info': (3, 3), 'content': '1', 'identity': 'number'}),
+                line info: (3, 6),
+                stmts: [
+                    {
+                        content: {
+                            return value: [
+                                +,
+                                {
+                                    line info: (5, 5),
+                                    symbol: num,
+                                    index: None,
+                                    identity: id,
+                                }
+                                {
+                                    args: [
+                                        [
+                                            -,
+                                            {
+                                                line info: (5, 5),
+                                                symbol: num,
+                                                index: None,
+                                                identity: id,
+                                            }
+                                            {
+                                                line info: (5, 5),
+                                                content: 1,
+                                                identity: number,
+                                            }
+                                        ]
+                                    ]
+                                    function symbol: sum,
+                                    line info: (5, 5),
+                                    identity: function call,
+                                }
+                            ]
+                            line info: (5, 0),
+                            identity: return,
+                        }
+                        identity: stmt,
+                    }
+                ]
+                identity: if,
+            }
+            identity: stmt,
+        }
+        {
+            content: {
+                return value: {
+                    line info: (8, 8),
+                    symbol: num,
+                    index: None,
+                    identity: id,
+                }
+                line info: (8, 0),
+                identity: return,
+            }
+            identity: stmt,
+        }
+    ]
+    identity: function,
+}
+{
+    return type: int,
+    line info: (0, 17),
+    params: [
+        {
+            param type: void,
+            identity: param,
+        }
+    ]
+    symbol: main,
+    stmts: [
+        {
+            content: {
+                vars: [
+                    {
+                        line info: (14, 14),
+                        symbol: result,
+                        index: None,
+                        identity: id,
+                    }
+                ]
+                var type: int,
+                line info: (0, 0),
+                identity: declare var,
+            }
+            identity: stmt,
+        }
+        {
+            content: {
+                line info: (0, 0),
+                expr: arithexp,
+                var symbol: {
+                    line info: (15, 15),
+                    symbol: result,
+                    index: None,
+                    identity: id,
+                }
+                identity: assign,
+            }
+            identity: stmt,
+        }
+        {
+            content: {
+                args: [
+                    {
+                        line info: (16, 16),
+                        content: \nTotal : %d\n,
+                        identity: string,
+                    }
+                    {
+                        line info: (16, 16),
+                        symbol: result,
+                        index: None,
+                        identity: id,
+                    }
+                ]
+                function symbol: printf,
+                line info: (16, 16),
+                identity: function call,
+            }
+            identity: stmt,
+        }
+    ]
+    identity: function,
+}
+Done.

@@ -1,0 +1,14 @@
+-x*2y
+-+a35b
+incorrect syntax
+-*x2y
+--a35b
+incorrect syntax
+---++1234*1ab**123456*cde
+1
+incorrect syntax
+incorrect syntax
+a
+incorrect syntax
+incorrect syntax
+incorrect syntax

@@ -1,0 +1,330 @@
+Opening files. . .
+Parsing. . .
+Total 2 functions...
+{
+    params: [
+        {
+            param type: int,
+            symbol: count,
+            identity: param,
+        }
+        {
+            param type: int*,
+            symbol: value,
+            identity: param,
+        }
+    ]
+    line info: (0, 11),
+    identity: function,
+    return type: int,
+    stmts: [
+        {
+            content: {
+                vars: [
+                    {
+                        index: None,
+                        line info: (3, 3),
+                        symbol: i,
+                        identity: id,
+                    }
+                    {
+                        index: None,
+                        line info: (3, 3),
+                        symbol: total,
+                        identity: id,
+                    }
+                ]
+                var type: int,
+                line info: (0, 0),
+                identity: declare var,
+            }
+            identity: stmt,
+        }
+        {
+            content: {
+                expr: arithexp,
+                var symbol: {
+                    index: None,
+                    line info: (4, 4),
+                    symbol: total,
+                    identity: id,
+                }
+                line info: (0, 0),
+                identity: assign,
+            }
+            identity: stmt,
+        }
+        {
+            content: {
+                incre: {
+                    isPreFix: False,
+                    line info: (0, 5),
+                    symbol: {
+                        index: None,
+                        line info: (5, 5),
+                        symbol: i,
+                        identity: id,
+                    }
+                    identity: incre,
+                }
+                line info: (5, 8),
+                assign: ({'index': None, 'line info': (5, 5), 'symbol': 'i', 'identity': 'id'}, {'line info': (5, 5), 'content': '0', 'identity': 'number'}),
+                condition: ({'index': None, 'line info': (5, 5), 'symbol': 'i', 'identity': 'id'}, '<', {'index': None, 'line info': (5, 5), 'symbol': 'count', 'identity': 'id'}),
+                identity: forloop,
+                stmts: [
+                    {
+                        content: {
+                            expr: arithexp,
+                            var symbol: {
+                                index: None,
+                                line info: (7, 7),
+                                symbol: total,
+                                identity: id,
+                            }
+                            line info: (0, 0),
+                            identity: assign,
+                        }
+                        identity: stmt,
+                    }
+                ]
+            }
+            identity: stmt,
+        }
+        {
+            content: {
+                return value: [
+                    /,
+                    {
+                        index: None,
+                        line info: (10, 10),
+                        symbol: total,
+                        identity: id,
+                    }
+                    {
+                        index: None,
+                        line info: (10, 10),
+                        symbol: count,
+                        identity: id,
+                    }
+                ]
+                line info: (10, 0),
+                identity: return,
+            }
+            identity: stmt,
+        }
+    ]
+    symbol: avg,
+}
+{
+    params: [
+        {
+            param type: void,
+            identity: param,
+        }
+    ]
+    line info: (0, 32),
+    identity: function,
+    return type: int,
+    stmts: [
+        {
+            content: {
+                vars: [
+                    {
+                        index: None,
+                        line info: (15, 15),
+                        symbol: student_number,
+                        identity: id,
+                    }
+                    {
+                        index: None,
+                        line info: (15, 15),
+                        symbol: count,
+                        identity: id,
+                    }
+                    {
+                        index: None,
+                        line info: (15, 15),
+                        symbol: i,
+                        identity: id,
+                    }
+                    {
+                        index: None,
+                        line info: (15, 15),
+                        symbol: sum,
+                        identity: id,
+                    }
+                ]
+                var type: int,
+                line info: (0, 0),
+                identity: declare var,
+            }
+            identity: stmt,
+        }
+        {
+            content: {
+                vars: [
+                    {
+                        index: {
+                            line info: (16, 16),
+                            content: 4,
+                            identity: number,
+                        }
+                        line info: (16, 16),
+                        symbol: mark,
+                        identity: array,
+                    }
+                ]
+                var type: int,
+                line info: (0, 0),
+                identity: declare var,
+            }
+            identity: stmt,
+        }
+        {
+            content: {
+                vars: [
+                    {
+                        index: None,
+                        line info: (17, 17),
+                        symbol: average,
+                        identity: id,
+                    }
+                ]
+                var type: float,
+                line info: (0, 0),
+                identity: declare var,
+            }
+            identity: stmt,
+        }
+        {
+            content: {
+                expr: arithexp,
+                var symbol: {
+                    index: None,
+                    line info: (19, 19),
+                    symbol: count,
+                    identity: id,
+                }
+                line info: (0, 0),
+                identity: assign,
+            }
+            identity: stmt,
+        }
+        {
+            content: {
+                expr: arithexp,
+                var symbol: {
+                    index: None,
+                    line info: (20, 20),
+                    symbol: sum,
+                    identity: id,
+                }
+                line info: (0, 0),
+                identity: assign,
+            }
+            identity: stmt,
+        }
+        {
+            content: {
+                incre: {
+                    isPreFix: False,
+                    line info: (0, 22),
+                    symbol: {
+                        index: None,
+                        line info: (22, 22),
+                        symbol: i,
+                        identity: id,
+                    }
+                    identity: incre,
+                }
+                line info: (22, 31),
+                assign: ({'index': None, 'line info': (22, 22), 'symbol': 'i', 'identity': 'id'}, {'line info': (22, 22), 'content': '0', 'identity': 'number'}),
+                condition: ({'index': None, 'line info': (22, 22), 'symbol': 'i', 'identity': 'id'}, '<', {'index': None, 'line info': (22, 22), 'symbol': 'count', 'identity': 'id'}),
+                identity: forloop,
+                stmts: [
+                    {
+                        content: {
+                            expr: arithexp,
+                            var symbol: {
+                                index: {
+                                    index: None,
+                                    line info: (24, 24),
+                                    symbol: i,
+                                    identity: id,
+                                }
+                                line info: (24, 24),
+                                symbol: mark,
+                                identity: array,
+                            }
+                            line info: (0, 0),
+                            identity: assign,
+                        }
+                        identity: stmt,
+                    }
+                    {
+                        content: {
+                            expr: arithexp,
+                            var symbol: {
+                                index: None,
+                                line info: (25, 25),
+                                symbol: sum,
+                                identity: id,
+                            }
+                            line info: (0, 0),
+                            identity: assign,
+                        }
+                        identity: stmt,
+                    }
+                    {
+                        content: {
+                            expr: arithexp,
+                            var symbol: {
+                                index: None,
+                                line info: (26, 26),
+                                symbol: average,
+                                identity: id,
+                            }
+                            line info: (0, 0),
+                            identity: assign,
+                        }
+                        identity: stmt,
+                    }
+                    {
+                        content: {
+                            stmts: [
+                                {
+                                    content: {
+                                        line info: (29, 29),
+                                        args: [
+                                            {
+                                                line info: (29, 29),
+                                                content: %f\n,
+                                                identity: string,
+                                            }
+                                            {
+                                                index: None,
+                                                line info: (29, 29),
+                                                symbol: average,
+                                                identity: id,
+                                            }
+                                        ]
+                                        function symbol: printf,
+                                        identity: function call,
+                                    }
+                                    identity: stmt,
+                                }
+                            ]
+                            condition: ({'index': None, 'line info': (27, 27), 'symbol': 'average', 'identity': 'id'}, '>', {'line info': (27, 27), 'content': '40', 'identity': 'number'}),
+                            line info: (27, 30),
+                            identity: if,
+                        }
+                        identity: stmt,
+                    }
+                ]
+            }
+            identity: stmt,
+        }
+    ]
+    symbol: main,
+}
+Done.
